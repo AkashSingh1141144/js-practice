@@ -38,3 +38,34 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+
+// ******************** Operations *****************
+
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+
+/*
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 / 2);
+console.log(2 % 2);
+console.log(2** 3);
+*/
+
+let str1 = "Akash"
+let str2 = "Singh"
+console.log(str1 + " " + str2);
+
+console.log("1" +2);
+console.log(1 + "2");
+console.log("1" + 2 + 3); // if string in first then treat all string
+console.log(1 + 2 + "3"); // if string in last then first of convertion then include string
+
+// tricky operation 
+console.log(true);
+console.log(+true);
+console.log(+"");// avoid all becouse it is not good 
