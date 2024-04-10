@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chai of code | Start and stop interval</title>
+</head>
+<body>
+	<h1>Chai or JavaScript </h1>
+	<button id="start">start</button>
+	<button id="stop">stop</button>
+</body>
+<script>
+	const sayMe = () => {
+		console.log('Akash singh', Date.now());
+	}
+	let intervalId;
+   const startInterval = () => {
+	intervalId = setInterval(sayMe, 1000)
+	console.log('STARTED');
+   }
+
+	document.querySelector('#start').addEventListener('click', startInterval)
+
+    const stopInterval = () => {
+		clearInterval(intervalId)
+		console.log('STOPPED');
+		intervalId = null
+	}
+
+	document.querySelector('#stop').addEventListener('click', stopInterval)
+</script>
+</html>

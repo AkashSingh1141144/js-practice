@@ -32,3 +32,56 @@ function newArray(anyArray) {
 let new2Array = newArray(myArray)
 console.log(new2Array);
 console.log("The 4th item of Array is:", new2Array[4]);
+
+
+
+
+
+function myLove(...odlLove) {
+	return odlLove ;
+}
+
+const newLove = myLove("Sandhya", "age - 20", "city - mirzapur")
+console.log(newLove);
+
+
+
+const car = {
+	name: "SUPRA",
+	price: 20000000,
+	speed:"500 Km/H",
+	color: "Black"
+
+}
+
+function myNewCar(anyObject) {
+	return anyObject;
+}
+
+const oldCar = myNewCar(car)
+console.log(oldCar.name);
+console.log(oldCar);
+console.log(typeof oldCar);//
+
+
+const fruit = ["Banana", "Apple", "Guavava", "Orange", "Chicku"]
+
+function stringFruit(anyFruit) {
+    return anyFruit;
+}
+
+const newStringFruit = stringFruit(fruit)
+console.log(newStringFruit);
+console.log(newStringFruit[3]);
+console.log(typeof newStringFruit); // object but i don't know why 
+
+
+
+function sportCar(...superCar) {
+   return superCar;
+}
+
+const newSportCar = sportCar("Dodge", "Speed - 900 Km/H", "Price - 2.4cr")
+console.log(newSportCar);
+console.log(typeof newSportCar);
+console.log(newSportCar[2]);

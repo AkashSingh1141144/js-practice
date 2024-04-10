@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Events | Chai or code </title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+	<h2>Amazing image</h2>
+	<div>
+		<ul id ="image">
+			<li><img width = "200px" id = "photoshop" src="images/_594dfb7a-7d24-4410-aeb5-28e12e402ce1.jpg" alt="photoshop" srcset=""></li>
+			<li><img width = "200px" id = "japan" src="images/_7d3cda77-3286-4b7f-a643-56618c4a289f.jpg" alt="" srcset=""></li>
+			<li><img width = "200px" id = "river" src="images/_be7549f7-0c5b-4012-bd47-21addedf8dd1.jpg" alt="" srcset=""></li>
+			<li><img width = "200px" id = "owl" src="images/_bf7fadab-0a4f-46f7-9ed8-a1de9c6ee8c3.jpg" alt="" srcset=""></li>
+			<li><img width = "200px" id = "prayer" src="images/_fa559ffc-f4d0-4df7-ad9f-9cc1619e44af.jpg" alt="" srcset=""></li>
+			<li><a style="color: aliceblue;" href="http://google.com" id="google">Google</a></li>
+		</ul>
+	</div>
+</body>
+<script>
+	// document.getElementById('owl').onclick = function () {
+	// 	alert("owl clicked")
+	// }        //+++++++++ onclick() give us a limited fichers thats why we are used mostly EventListener() ===> EventListener() give more feachers 
+
+	// attachEvent()
+	// jQuery --- on
+
+// type, timestamp, defaultPrevented,
+	// target, toElement, srcElement, currentTarget, 
+	// clientX, clentY, screenX, screenY
+	// altKey, ctrlKey ,shiftKey, keyCode
+
+	// document.getElementById("owl").addEventListener('click', function(e) {
+	// 	// alert('owl clicked againe')
+	// 	console.log(e);
+	// }, false)
+
+	
+// enent Propogation
+
+// document.getElementById("image").addEventListener('click', function(e) {
+// 		// alert('owl clicked againe')
+// 		console.log('clicked inside the ul');
+// 	}, false)
+
+	
+// document.getElementById("owl").addEventListener('click', function(e) {
+// 		// alert('owl clicked againe')
+// 		console.log('owl clicked ');
+// 		e.stopPropagation()
+// 	}, false)
+
+
+
+// // preventDefault
+
+// document.getElementById('google').addEventListener('click', function(e) {
+// 	console.log('google clicked');
+// 	e.preventDefault()
+// 	e.stopPropagation()
+// }, false)
+
+
+
+
+
+// exmple ---
+
+document.querySelector('#image').addEventListener('click', function(e) {
+
+	// console.log(e.target);
+	// console.log(e.target.parentNode);
+	console.log(e.target.tagName);
+	if (e.target.tagName === 'IMG') {
+		console.log(e.target.id);
+		let removeIt = e.target.parentNode
+	removeIt.remove()
+	}
+	
+
+
+	// removeIt.parentNode.remveChilde(removeIt) /// new method to remove
+
+
+}, false)
+</script>
+</html>

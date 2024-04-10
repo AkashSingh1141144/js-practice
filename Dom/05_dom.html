@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Self Practice of Dom | create element & edite & remove</title>
+</head>
+<body style="background-color: #212121; color: aqua;">
+	<ul class="friends">
+		<li>Anuj Viswakram</li>
+	</ul>
+</body>
+<script>
+	function addFriends(friends) {
+		const li = document.createElement("li")
+		li.appendChild(document.createTextNode(friends))
+		document.querySelector(".friends").append(li)
+	}
+	addFriends("Sandhya")
+	addFriends("Madhuri")
+	addFriends("Pallavi")
+
+
+	//replacing value
+
+	const replace = document.querySelector("li:nth-child(2)")
+	const newLi = document.createElement("li")
+	newLi.textContent = "I Love My Mom && Dad"
+	replace.replaceWith(newLi)
+
+	// remove
+
+	const removeLast = document.querySelector("li:last-child")
+	// const removeLast = document.querySelector("li:nth-child(1)")
+
+	removeLast.remove()
+
+
+	function addNewFriends(friends) {
+		const newFriends = document.createElement("li")
+		newFriends.appendChild(document.createTextNode(friends))
+		document.querySelector(".friends").appendChild(newFriends)
+		const text = document.querySelector(".friends")
+		text.style.color = "green"
+		text.style.fontSize = "39px"
+		text.style.fontWeight = "bolder"
+		// text.style.backgroundColor = "#384374"
+	}
+	addNewFriends("chal ja be")
+	addNewFriends("kaliya")
+</script>
+</html>

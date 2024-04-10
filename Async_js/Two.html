@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chai or code | Asyncronous js</title>
+</head>
+<body>
+	<h1>Chai or JavaScript </h1>
+	<button id="start">start</button>
+	<button id="stop">stop</button>
+</body>
+<script>
+	const sayDate = (str) => {
+		console.log(str,'Akash Singh', Date.now());
+	}
+     const intervrID = setInterval(sayDate, 2000, 'hi');
+	 
+
+	 document.querySelector('#stop').addEventListener('click', () => {
+		clearInterval(intervrID)
+		console.log('STOPPED');
+	 })
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	
+let n = prompt('Enter a number:')
+
+
+let arr1 = []
+
+for (let i = 1; i <= n; i++) {
+  	arr1[i-1] = i;
+}
+
+console.log(arr1);
+
+let sum = arr1.reduce((pre, curr) => {
+return	pre + curr
+})
+
+console.log(sum);
+
+let factorial = arr1.reduce((pre, curr) => {
+	return	pre * curr;
+	})
+	console.log(factorial);
+</script>
+</html>

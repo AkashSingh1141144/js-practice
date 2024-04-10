@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chai or code | DOM</title>
+</head>
+<body style="background-color: #212121; color:#ffffff;">
+	<ul class="language">
+		<li>JavaScript</li>
+	</ul>
+</body>
+<script>
+	function addLanguage(langName) {
+		const li = document.createElement("li")
+		li.innerHTML = `${langName}`
+		document.querySelector(".language").appendChild(li)
+
+	}
+	addLanguage("python")
+	addLanguage("typescript")// this method not good for big project becouse of this not a optomised way. in any project try to less use of innerHTML
+
+
+
+	function addOptimisedLanguage(language) {
+		const li = document.createElement("li")
+		li.appendChild(document.createTextNode(language))
+		document.querySelector(".language").appendChild(li)
+	}
+	addOptimisedLanguage("golang")
+	addOptimisedLanguage("Java")   // mostly prifored this optimiesed way to create a big project 
+
+	
+// Edit values
+
+//    const secondeLand = document.querySelector("li:nth-child(2)")
+// //    secondeLand.innerHTML = "mojo" // less use this innerHTML
+// const newLi = document.createElement("li")
+// newLi.textContent = "mojo"
+// secondeLand.replaceWith(newLi)
+
+const thiredLang = document.querySelector("li:nth-child(3)")
+const newLi = document.createElement("li")
+newLi.textContent = "ruby"
+thiredLang.replaceWith(newLi)
+
+
+// edit
+
+const forthLang = document.querySelector("li:first-child")
+forthLang.outerHTML = "<li>TypeScript<li>"
+
+// remove
+
+const lastLang = document.querySelector("li:last-child")
+lastLang.remove()
+
+
+</script>
+</html>

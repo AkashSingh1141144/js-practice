@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tongle switch | switch light to dark BG</title>
+</head>
+<style>
+	
+</style>
+<body>
+	<button id="light">
+		light
+	</button>
+	<button id="dark">
+		dark
+	</button>
+
+</body>
+<script>
+	document.querySelector('#light').addEventListener('click', () => {
+		document.body.style.backgroundColor = '#fff'
+	})
+	document.querySelector('#dark').addEventListener('click', () => {
+        document.body.style.backgroundColor = '#212121'
+		document.getElementById('dark').innerText = 'light'
+	})
+</script>
+</html>
