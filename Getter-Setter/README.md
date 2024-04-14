@@ -1,0 +1,4 @@
+#  Getter (Lene Wala): Yeh aapko object ke property ko padhne (access) ka tareeka deta hai. Aap ek function ko define karte hain jo property ko padhne ke liye istemal hota hai. Isse, aap property ki value ko padh sakte hain, lekin modify nahi kar sakte. 
+# Setter (Dene Wala): Yeh aapko object ke property ko modify karne ka tareeka deta hai. Aap ek function ko define karte hain jo property ko set karne ke liye istemal hota hai. Isse, aap property ki value ko update kar sakte hain.
+
+# ya maine ek class object banaya jisme email or or password hai jisko main user ko ya to dena hi nhi chahta ya password ko increap kr ke dena chahta hun to iss care hm Getter or Setter ka use krte hai 
