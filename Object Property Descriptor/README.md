@@ -1,4 +1,4 @@
-# Thik hai, ek simple tareeke se samjhaate hain. Property descriptor ek tarah ka blueprint hai jo bataata hai ki ek property ke saath kya-kya options hain.
+# Property descriptor ek tarah ka blueprint hai jo bataata hai ki ek property ke saath kya-kya options hain.
 
 # Socho, tum ek ghar banane ja rahe ho. Ghar ke blueprint mein likha hota hai ki ghar ke andar kis tarah ke kamre honge, kaunsi diwar kitni mazboot hogi, aur kis prakar ka flooring hoga, waghera.
 
