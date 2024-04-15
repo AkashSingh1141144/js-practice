@@ -3,6 +3,7 @@
 Sure! Let's consider a real-world scenario where the apply() method can be useful.
 
 Imagine you have a web application where users can log in and perform various actions. You might have a User object representing each user, and you want to dynamically assign permissions to each user based on their role.
+
 */
 
 function User(name, role) {

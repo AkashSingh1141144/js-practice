@@ -4,7 +4,7 @@ The difference is:
 
 The call() method takes arguments separately.
 
-The apply() method takes arguments as an array.
+The  apply() method takes arguments as an array.
 */
 
 const person = {

@@ -17,7 +17,7 @@ console.log(newPerson);
 console.log(newPerson1);
 
 /*
-The Difference Between call() and apply()
+The  Difference Between call() and apply()
 The difference is:
 
 The call() method takes arguments separately.
