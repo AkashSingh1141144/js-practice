@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chenge Background Color</title>
+</head>
+<body>
+	<button id="orange">Orange</button>
+	<button id="red">Red</button>
+	<button id="blue">Blue</button>
+	<button id="green">Green</button>
+	<button id="yellow">Yellow</button>
+	<button id="purple">Purple</button>
+</body>
+<script>
+	function chengeMultiColorBg(color) {
+		return function() {
+			document.body.style.backgroundColor = `${color}`;
+		}
+	}
+
+	document.getElementById('orange').addEventListener('click', chengeMultiColorBg('orange'));
+	document.getElementById('red').addEventListener('click', chengeMultiColorBg('red'));
+	document.getElementById('blue').addEventListener('click', chengeMultiColorBg('blue'));
+	document.getElementById('green').addEventListener('click', chengeMultiColorBg('green'));
+	document.getElementById('yellow').addEventListener('click', chengeMultiColorBg('yellow'));
+	document.getElementById('purple').addEventListener('click', chengeMultiColorBg('purple'));
+</script>
+</html>

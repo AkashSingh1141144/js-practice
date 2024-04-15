@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lexical scoping | js</title>
+  </head>
+  <body></body>
+  <script>
+    function init() {
+      let name = "Mozilla"; // name is a local variable created by init
+      function displayName() {
+        // displayName() is the inner function, that forms the closure
+        console.log(name); // use variable declared in the parent function
+      }
+      displayName();
+    }
+    init();
+
+
+	function Parent() {
+		this.name = 'Anand Prasad singh'
+		this.age = 51
+		function child1() {
+			console.log(this.name);
+		}
+		function child2() {
+			console.log(this.age);
+		}
+		child1()
+		child2()
+	}
+	Parent()
+  </script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Closure | Reat wold Example</title>
+</head>
+<body>
+	<button id="black">Dark</button>
+	<button id="white">Light</button>
+	<script>
+		/*
+		document.getElementById('black').addEventListener('click', () =>{
+			document.body.style.backgroundColor = '#313131'
+		})
+		document.getElementById('white').addEventListener('click', () =>{
+			document.body.style.backgroundColor = '#ffffff'
+		})
+*/
+
+
+
+		//  this ok but sopse that if we have 500 color to chenge background then we will write 500 code like this 
+		//  it is not good because of do not repeat yourself
+		//  so we can use closure 
+		//  closure is a function that has access to the outer function's variables even after the outer function has returned.
+		
+
+		function changeColor(color){
+		    return function() {
+				document.body.style.backgroundColor = `${color}`;
+			}
+		}
+
+		document.getElementById('black').addEventListener('click', changeColor('#313131'))
+		document.getElementById('white').addEventListener('click', changeColor('#ffffff'))
+	</script>
+</body>
+</html>
