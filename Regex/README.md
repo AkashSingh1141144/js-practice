@@ -1,0 +1,3 @@
+# JavaScript regex kisi bhi string pattern ko match karne aur manipulate karne ke liye istemal hota hai. "Regex" ka matlab hota hai "regular expression." Yeh expressions text ko search, extract, aur modify karne ke liye use hoti hain.
+
+# Regex ko JavaScript mein / characters ke darmiyan likha jata hai, jaise /pattern/, jahaan "pattern" woh string hai jo aap dhoondh rahe hain. Regex mein aap alag alag operators aur characters ka istemal kar sakte hain, jinmein kuch common operators hain jaise |, ^, $, *, +, ?, ..
