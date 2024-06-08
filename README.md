@@ -1,4 +1,4 @@
-![images](https://github.com/AkashSingh1141144/js-practice/assets/147084128/a0453fd7-48e1-481d-ad0e-441e1d2be876)
+![pexels-hiteshchoudhary-7775639](https://github.com/AkashSingh1141144/js-practice/assets/147084128/632380e0-c190-4f3a-afab-169aea36d31d)
 
 
 
