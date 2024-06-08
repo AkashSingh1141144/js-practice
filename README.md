@@ -1,3 +1,7 @@
+![images](https://github.com/AkashSingh1141144/js-practice/assets/147084128/a0453fd7-48e1-481d-ad0e-441e1d2be876)
+
+
+
 # note for interviewer perspective
 
 # start with DOM (DOCUMENT OBJECT MODEL)
